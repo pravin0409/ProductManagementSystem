@@ -1,0 +1,104 @@
+/* ==========================================================================
+   Product Management System - Custom Styles
+   Clean, modern light theme for College Practical No. 07
+   ========================================================================== */
+
+:root {
+  --primary-color: #0d6efd;
+  --body-bg: #f8f9fa;
+  --card-border-radius: 0.75rem;
+  --transition-speed: 0.2s;
+}
+
+body {
+  background-color: var(--body-bg);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #212529;
+  min-height: 100vh;
+}
+
+/* KPI Summary Cards */
+.kpi-card {
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.kpi-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+}
+
+/* Product Catalog Table */
+.table th {
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #6c757d;
+  background-color: #f8f9fa;
+}
+
+.table td {
+  font-size: 0.925rem;
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* Stock Badges */
+.badge-stock {
+  font-size: 0.775rem;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  border-radius: 50rem;
+}
+
+/* Modal styling */
+.modal-content {
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+}
+
+/* Action Buttons */
+.btn-action {
+  padding: 0.3rem 0.55rem;
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 576px) {
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+}
+
